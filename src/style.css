@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display|Long+Cang|Monoton|Permanent+Marker|Cinzel|Faster+One|Gochi+Hand|Lacquer|Megrim|Nosifer|Swanky+and+Moo+Moo&display=swap');
+
+* {
+    box-sizing: border-box;  /* widths in pixels include padding */
+    font-family: 'Red Hat Display';
+    color: #777;
+}
+
+/* no side margins */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* no upper margin */
+nav ul {
+    margin: 0;
+}
+
+/* navigation links in-line */
+nav li {
+    display: inline;
+}
+
+/* navigation links style and spacing */
+nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;  /* removes underline */
+}
+
+/* hover over element feedback */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.main-nav li {
+    padding: 0;   /* no padding on top or bottom and 5% in between */
+}
+
+.main-header {
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.show-name {
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 3em;
+    font-family: 'Permanent Marker'
+}
+
+.show-name-large {
+    font-size: 12em;
+    font-weight: normal
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.section-header {
+    font-family: 'Permanent Marker';
+    font-weight: normal;
+    text-align: center;
+    font-size: 2em;    
+}
+
+.section-paragraph {
+    font-size: 1.2em;
+}
+
+.home-show-image {
+    float: left;
+    height: 288px;
+    width: 384px;
+    margin: 20px;
+}
+
+.main-footer {
+    background-color: rgb(59, 99, 151);
+    color: white;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;    /* centered vertically */
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav img {
+    height: 50px;
+    width: 50px;
+}
+
+.cast {
+    padding: 15px;
+}
+
+.character-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.character-image {
+    float: left;
+    width: 250px;
+    padding: 0 15px;
+    border-radius: 100px
+}
+
+.character-descriptions {
+    padding: 30px 15px;
+    font-size: 1.2em;
+}
+
+button {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.67em;
+    cursor: pointer;
+}
+
+.shop-image {
+    width: 300px;
+}
+
+.episodes-row {
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.episodes-row:last-child {
+    border-bottom: none
+}
+
+.episodes-item {
+    display: inline-block;
+    padding-right: 0.5em;
+}
+
+.episodes-season {
+    font-size: 2em;
+    width: 35%;
+    vertical-align: middle;
+}
+
+.episodes-title {
+    font-size: 2em;
+    width: 55%;
+    color: #555;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.episodes-button {
+    max-width: 20%;
+    border: 2px solid #555;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(59, 99, 151);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+}
+
+.episodes-button:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#modern-warfare {
+    font-size: 2.5em;
+    font-family: "Faster One";
+}
+
+#dnd {
+    font-size: 2.5em;
+    font-family: "Long Cang";
+}
+
+#pillows {
+    font-size: 2.25em;
+    font-family: "Gochi Hand";
+}
+
+#anatomy {
+    font-family: "Cinzel";
+}
+
+#geothermal {
+    font-family: "Nosifer";
+}
+
+#waxing {
+    font-size: 2.5em;
+    font-family: "Swanky and Moo Moo";
+}
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-image {
+    height: 350px;
+    width: 500px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.shop-button {
+    border: 2px solid #555;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(59, 99, 151);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+}
+
+.shop-button:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-header-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black ;
+}
+
+.cart-row:last-child .cart-column {
+    border: none
+}
+
+.cart-item {
+    width: 40%;
+}
+
+.cart-price {
+    width: 30%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 30%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 99, 151);
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-quantity-button {
+    color: white;
+    background-color: #eb5757;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.cart-quantity-button:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-total {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.purchase-button {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-bottom: 80px;
+    margin-right: auto;
+    font-size: 1.75em;
+    border: 2px solid #555;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(59, 99, 151);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+}
+
+.purchase-button:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.quote-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.quote-button {
+    font-size: 1.5em;
+    border: 2px solid #555;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(59, 99, 151);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+}
+
+.quote-button:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.quote {
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.quote-box {
+    position: relative;     /* fields are positioned within the button */
+    height: 300px;
+    width: 900px;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    transform: translateZ(-150px);
+}
+
+.quote-box:hover {
+    transform: rotateX(-90deg) translateY(150px);
+}
+
+.side {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.75em;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.side-default {
+    background-color: white;
+    border: 10px solid rgb(59, 99, 151);
+    color: rgb(59, 99, 151);
+    transform: translateZ(150px);
+}
+
+.side-hover {
+    color: white;
+    background-color: rgb(59, 99, 151);
+    transform: rotateX(90deg) translateZ(150px);
+}
