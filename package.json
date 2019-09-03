@@ -1,0 +1,23 @@
+{
+  "name": "CommunitySite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d community_site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeodell/CommunitySite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeodell/CommunitySite/issues"
+  },
+  "homepage": "https://github.com/jeodell/CommunitySite",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
