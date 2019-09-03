@@ -111,6 +111,10 @@ nav a:hover {
     padding: 15px;
 }
 
+.characters {
+    padding-bottom: 20px;
+}
+
 .character-name {
     font-size: 1.5em;
     font-weight: bold;
@@ -118,13 +122,14 @@ nav a:hover {
 
 .character-image {
     float: left;
+    height: 300px;
     width: 250px;
     padding: 0 15px;
     border-radius: 100px
 }
 
 .character-descriptions {
-    padding: 30px 15px;
+    padding: 10px 15px;
     font-size: 1.2em;
 }
 
@@ -215,7 +220,7 @@ button {
 .shop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .shop-item {
@@ -226,15 +231,15 @@ button {
     display: block;
     width: 100%;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
+    font-weight: bolder;
+    font-size: 2em;
     color: #333;
     margin-bottom: 15px;
 }
 
 .shop-image {
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 600px;
 }
 
 .shop-item-details {
