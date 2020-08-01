@@ -4,12 +4,17 @@
     box-sizing: border-box;  /* widths in pixels include padding */
     font-family: 'Red Hat Display';
     color: #777;
+    --nav-load-time: 300ms;
 }
 
 /* no side margins */
 html, body {
     margin: 0;
     padding: 0;
+}
+
+nav {
+    animation: nav-load var(--nav-load-time) ease-in;
 }
 
 /* no upper margin */
@@ -42,7 +47,7 @@ nav a:hover {
 }
 
 .main-nav li {
-    padding: 0;   /* no padding on top or bottom and 5% in between */
+    padding: 0;
 }
 
 .main-header {
@@ -456,4 +461,13 @@ button {
     color: white;
     background-color: rgb(59, 99, 151);
     transform: rotateX(90deg) translateZ(150px);
+}
+
+@keyframes nav-load {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
